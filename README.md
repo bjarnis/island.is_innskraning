@@ -3,8 +3,9 @@ Saml 2 Innskráning fyrir island.is í Java
 
 ### Uppfært eftir island.is þjónusturof 03.07.2021
 [Sjá upplýsingar https://island.is/rof-innskraning/leidbeiningar-fyrir-taeknifolk](https://island.is/rof-innskraning/leidbeiningar-fyrir-taeknifolk)
- 
- 
+  
+
+  
 ```java
 KeyStore keystore = KeyStore.getInstance("JKS");
 try (InputStream is = Files.newInputStream(Paths.get("./Audkennisrot_Kedja.jks"))) {
