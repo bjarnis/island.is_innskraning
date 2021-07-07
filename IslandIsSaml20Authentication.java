@@ -117,7 +117,7 @@ public class IslandIsSaml20Authentication {
 	
 	private static final Logger logger = LoggerFactory.getLogger(IslandIsSaml20Authentication.class);
 	private static final String VALID_SUBJECT_DN = "SERIALNUMBER=6503760649"; // Þjóðskrá Íslands persidno
-	private static final String 	 = "CN=Fullgilt audkenni";
+	private static final String VALID_ISSUER_DN_START_VALUE = "CN=Fullgilt audkenni";
 	private final KeyStore _keystore;
 
 	public enum KEY_AUTHENTICATION_TYPE {
