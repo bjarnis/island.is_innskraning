@@ -8,7 +8,7 @@ Saml 2 Innskráning fyrir island.is í Java
 &nbsp;
 ```java
 KeyStore keystore = KeyStore.getInstance("JKS");
-try (InputStream is = Files.newInputStream(Paths.get("./Audkennisrot_Kedja.jks"))) {
+try (InputStream is = Files.newInputStream(Paths.get("./Audkenni_ca_Kedja.jks"))) {
     keystore.load(is, "password".toCharArray());
 }
 
