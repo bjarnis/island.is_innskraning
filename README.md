@@ -1,5 +1,5 @@
 # island.is_innskraning
-Saml 2 Innskráning fyrir island.is í Java
+Saml 2 - Innskráning fyrir island.is í Java
 
 ### Uppfært eftir island.is þjónusturof 03.07.2021
 [Sjá upplýsingar https://island.is/rof-innskraning/leidbeiningar-fyrir-taeknifolk](https://island.is/rof-innskraning/leidbeiningar-fyrir-taeknifolk)
@@ -17,7 +17,7 @@ String userIP = "%user_ip%";
 String authId = null; // null to not validate auth_id
 String restrictedAudience = "undirlen.bjarni.net";
 
-SGSIslandIsSaml20Authentication isauth = new SGSIslandIsSaml20Authentication(keystore);
+IslandIsSaml20Authentication isauth = new IslandIsSaml20Authentication(keystore);
 Map<String, String> map = isauth.validateSaml(samlString, userIP, authId, restrictedAudience);
 for (Entry<String, String> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " = " + entry.getValue() + "\n");
