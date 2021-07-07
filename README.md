@@ -9,7 +9,7 @@ Saml 2 - Innskráning fyrir island.is í Java
 ```java
 KeyStore keystore = KeyStore.getInstance("JKS");
 try (InputStream is = Files.newInputStream(Paths.get("./Audkenni_ca_Kedja.jks"))) {
-    keystore.load(is, "password".toCharArray());
+    keystore.load(is, "".toCharArray());
 }
 
 String samlString = "%result.body_token%";
