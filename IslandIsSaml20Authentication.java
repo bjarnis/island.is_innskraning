@@ -64,11 +64,11 @@ import org.w3c.dom.Element;
 
 /**
  * // Validates SAML 2.0 response from island.is Example usage: new
- * SGSIslandIsSaml20Authentication().validateSaml(islandIsToken, ip, userAgent,
+ * IslandIsSaml20Authentication().validateSaml(islandIsToken, ip, userAgent,
  * authId);
  */
 
-public class SGSIslandIsSaml20Authentication {
+public class IslandIsSaml20Authentication {
 
 	// (friendly name „Kennitala“) inniheldur kennitölu notanda sem var að innskrá sig.
 	public static final String SAML_ATTRIBUTE_USERSSN = "UserSSN";
@@ -115,7 +115,7 @@ public class SGSIslandIsSaml20Authentication {
 	// Key in result map containing the complete saml text
 	public static final String SAML_MAP_KEY = "saml20";
 	
-	private static final Logger logger = LoggerFactory.getLogger(SGSIslandIsSaml20Authentication.class);
+	private static final Logger logger = LoggerFactory.getLogger(IslandIsSaml20Authentication.class);
 	private static final String VALID_SUBJECT_DN = "SERIALNUMBER=6503760649"; // Þjóðskrá Íslands persidno
 	private static final String 	 = "CN=Fullgilt audkenni";
 	private final KeyStore _keystore;
@@ -193,7 +193,7 @@ public class SGSIslandIsSaml20Authentication {
 	 * 
 	 * @param jksKeyStore keystore to validate against
 	 */
-	public SGSIslandIsSaml20Authentication(KeyStore keystore) throws ConfigurationException {
+	public IslandIsSaml20Authentication(KeyStore keystore) throws ConfigurationException {
 		_keystore = keystore;
 		DefaultBootstrap.bootstrap();
 	}
